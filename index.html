@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Stack with Flip and Stack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="Cards/SDG Logo (2).png" alt="Logo" class="logo">
+        <h1>SDG Startup Challenge</h1>
+    </div>
+    
+    <div class="container" style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(2, auto); gap: 20px; justify-items: center;">
+
+        <ul class="card-stacks">
+            <li class="stack stack-6">
+                <ul class="cards-down">
+                    <li class="card card-1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront01.png" alt="SDG Card Front 1">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack01.png" alt="SDG Card Back 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront02.png" alt="SDG Card Front 2">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack02.png" alt="SDG Card Back 2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront03.png" alt="SDG Card Front 3">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack03.png" alt="SDG Card Back 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-4">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront04.png" alt="SDG Card Front 4">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack04.png" alt="SDG Card Back 4">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-5">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront05.png" alt="SDG Card Front 5">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack05.png" alt="SDG Card Back 5">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-6">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront06.png" alt="SDG Card Front 6">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack06.png" alt="SDG Card Back 6">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-7">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront07.png" alt="SDG Card Front 7">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack07.png" alt="SDG Card Back 7">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-8">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront08.png" alt="SDG Card Front 8">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack08.png" alt="SDG Card Back 8">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-9">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront09.png" alt="SDG Card Front 9">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack09.png" alt="SDG Card Back 9">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-10">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront10.png" alt="SDG Card Front 10">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack10.png" alt="SDG Card Back 10">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-11">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront11.png" alt="SDG Card Front 11">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack11.png" alt="SDG Card Back 11">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-12">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront12.png" alt="SDG Card Front 12">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack12.png" alt="SDG Card Back 12">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-13">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront13.png" alt="SDG Card Front 13">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack13.png" alt="SDG Card Back 13">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-14">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront14.png" alt="SDG Card Front 14">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack14.png" alt="SDG Card Back 14">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-15">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront15.png" alt="SDG Card Front 15">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack15.png" alt="SDG Card Back 15">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-16">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDGFront16.png" alt="SDG Card Front 16">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack16.png" alt="SDG Card Back 16">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-17">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/SDG cards/SDG STARTUP LOGO.png" alt="SDG Card Front 17">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/SDG cards/SDGCardsBack17.png" alt="SDG Card Back 17">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+
+        
+
+        <!-- Second Deck of Cards (from IdeaspArkCards in Cards folder) -->
+        <ul class="card-stacks">
+            <li class="stack stack-2">
+                <ul class="cards-down">
+                    <li class="card card-1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardfront.png" alt="Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardback01.png" alt="Card Back 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardfront.png" alt="Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardback02.png" alt="Card Back 2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardfront.png" alt="Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardback03.png" alt="Card Back 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-4">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardfront.png" alt="Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/IdeasparkCards/IdeasparkCardback04.png" alt="Card Back 4">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Third Deck of Cards (from HeartMindsetCards in Cards folder) -->
+        <ul class="card-stacks">
+            <li class="stack stack-3">
+                <ul class="cards-down">
+                    <li class="card card-1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardFront.png" alt="Heartset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardBack01.png" alt="Heartset Card Back 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardFront.png" alt="Heartset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardBack02.png" alt="Heartset Card Back 2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardFront.png" alt="Heartset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardBack03.png" alt="Heartset Card Back 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-4">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardFront.png" alt="Heartset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardBack04.png" alt="Heartset Card Back 4">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-5">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardFront.png" alt="Heartset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/HeartsetCardBack05.png" alt="Heartset Card Back 5">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-6">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback01.png" alt="Mindset Card Back 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-7">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback02.png" alt="Mindset Card Back 2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-8">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback03.png" alt="Mindset Card Back 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-9">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback04.png" alt="Mindset Card Back 4">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-10">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback05.png" alt="Mindset Card Back 5">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-11">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback06.png" alt="Mindset Card Back 6">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-12">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback07.png" alt="Mindset Card Back 7">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-13">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback08.png" alt="Mindset Card Back 8">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-14">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback09.png" alt="Mindset Card Back 9">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-15">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/HeartMindsetCards/MindsetCardFront.png" alt="Mindset Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/HeartMindsetCards/MindsetCardback10.png" alt="Mindset Card Back 10">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Fourth Deck of Cards (from Method Cards in Cards folder) -->
+        <ul class="card-stacks">
+            <li class="stack stack-4">
+                <ul class="cards-down">
+                    <!-- Add the Method Cards here -->
+                    <li class="card card-1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardsFront01.png" alt="Method Card Front 1">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack01.png" alt="Method Card Back 1">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront02.png" alt="Method Card Front 2">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack02.png" alt="Method Card Back 2">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront03.png" alt="Method Card Front 3">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack03.png" alt="Method Card Back 3">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-4">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront04.png" alt="Method Card Front 4">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack04.png" alt="Method Card Back 4">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-5">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront05.png" alt="Method Card Front 5">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack05.png" alt="Method Card Back 5">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-6">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront06.png" alt="Method Card Front 6">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack06.png" alt="Method Card Back 6">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-7">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront07.png" alt="Method Card Front 7">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack07.png" alt="Method Card Back 7">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-8">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront08.png" alt="Method Card Front 8">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack08.png" alt="Method Card Back 8">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-9">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront09.png" alt="Method Card Front 9">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack09.png" alt="Method Card Back 9">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-10">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront10.png" alt="Method Card Front 10">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack10.png" alt="Method Card Back 10">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-11">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront11.png" alt="Method Card Front 11">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack11.png" alt="Method Card Back 11">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-12">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront12.png" alt="Method Card Front 12">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack12.png" alt="Method Card Back 12">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-13">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront13.png" alt="Method Card Front 13">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack13.png" alt="Method Card Back 13">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-14">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront14.png" alt="Method Card Front 14">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack14.png" alt="Method Card Back 14">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-15">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront15.png" alt="Method Card Front 15">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack15.png" alt="Method Card Back 15">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-16">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront16.png" alt="Method Card Front 16">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack16.png" alt="Method Card Back 16">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card card-17">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Method Cards/MethodCardFront17.png" alt="Method Card Front 17">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Method Cards/MethodCardBack17.png" alt="Method Card Back 17">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Fifth Deck of Cards (from Logodesign Cards) -->
+        <ul class="card-stacks">
+            <li class="stack stack-5">
+                <ul class="cards-down">
+                    <li class="card card-1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Cards/Logodesign Cards/Logo design Card front .png" alt="Logo design Card Front">
+                            </div>
+                            <div class="card-back">
+                                <img src="Cards/Logodesign Cards/Logo design Card back .png" alt="Logo design Card Back">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+<!-- First Deck of Cards (from Rule Cards) -->
+<ul class="card-stacks">
+    <li class="stack stack-1">
+        <ul class="cards-down">
+            <li class="card card-1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront01.png" alt="Card 1 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack01.png" alt="Card 1 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront02.png" alt="Card 2 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack02.png" alt="Card 2 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront03.png" alt="Card 3 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack03.png" alt="Card 3 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-4">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront04.png" alt="Card 4 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack04.png" alt="Card 4 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-5">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront05.png" alt="Card 5 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack05.png" alt="Card 5 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-6">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront06.png" alt="Card 6 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack06.png" alt="Card 6 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-7">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront07.png" alt="Card 7 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack07.png" alt="Card 7 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-8">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront08.png" alt="Card 8 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack08.png" alt="Card 8 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-9">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront09.png" alt="Card 9 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack09.png" alt="Card 9 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-10">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront10.png" alt="Card 10 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack10.png" alt="Card 10 Back">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-11">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Rule Cards/RuleCardFront11.png" alt="Card 11 Front">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Rule Cards/RuleCardBack11.png" alt="Card 11 Back">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+<!-- Seventh Deck of Card(Task Cards in Cards folder) -->
+<ul class="card-stacks">
+    <li class="stack stack-7">
+        <ul class="cards-down">
+            <li class="card card-1">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront1.png" alt="Task Card Front 1">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback01.png" alt="Task Card Back 1">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-2">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront2.png" alt="Task Card Front 2">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback02.png" alt="Task Card Back 2">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-3">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront3.png" alt="Task Card Front 3">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback03.png" alt="Task Card Back 3">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-4">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront4.png" alt="Task Card Front 4">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback04.png" alt="Task Card Back 4">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-5">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront5.png" alt="Task Card Front 5">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback05.png" alt="Task Card Back 5">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-6">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront6.png" alt="Task Card Front 6">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback06.png" alt="Task Card Back 6">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-7">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront7.png" alt="Task Card Front 7">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback07.png" alt="Task Card Back 7">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-8">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront8.png" alt="Task Card Front 8">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback08.png" alt="Task Card Back 8">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-9">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront9.png" alt="Task Card Front 9">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback09.png" alt="Task Card Back 9">
+                    </div>
+                </div>
+            </li>
+            <li class="card card-10">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Cards/Task Cards/TaskCardfront10.png" alt="Task Card Front 10">
+                    </div>
+                    <div class="card-back">
+                        <img src="Cards/Task Cards/TaskCardfback10.png" alt="Task Card Back 10">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+    </div>
+
+    <!-- <button id="toggle-stack">Stack Cards</button> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

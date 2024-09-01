@@ -1,0 +1,222 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 40px;
+    flex-grow: 1;
+}
+
+.card-stacks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+}
+
+
+.stack {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+
+
+.cards-down {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.card {
+    transition: all 0.4s cubic-bezier(.63,.15,.03,1.22);
+    background: #FFF;
+    overflow: hidden;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 2px 4px 10px 0 #aaa;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(0deg);
+    cursor: pointer;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform-style: preserve-3d;
+}
+
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front img,
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* Specific stack positioning when active */
+.stack.active {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for column width */
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    box-sizing: border-box;
+}
+
+/* Ensure background covers full page */
+.stack.active:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1; /* Places the background behind the cards */
+}
+
+/* Increase card size and spread them out */
+.stack.active .card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Prevent card from going out of the viewport */
+.stack.active .card:hover {
+    transform: scale(1.2); /* Pops up the card on hover */
+    z-index: 1001; /* Ensures the card is on top */
+    max-width: 300px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+/* Adjust the positioning of cards in the stack */
+.stack.active .cards-down {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.transition .stack {
+    left: 0px;
+    top: 0px;
+}
+
+.transition .cards-down .card {
+    transform: rotateZ(0deg);
+}
+
+.flippable .card-inner {
+    transform: rotateY(180deg);
+}
+
+#toggle-stack {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+    align-self: center;
+}
+
+#toggle-stack:hover {
+    background-color: #0056b3;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Centers the whole header horizontally */
+    margin-bottom: 10px; /* Adjust this to control the gap below the header */
+}
+
+.logo {
+    height: 50px; /* Adjust the size of the logo */
+    margin-right: 10px; /* Space between the logo and the heading */
+}
+
+h1 {
+    text-align: center;
+    color: #AECB37;
+    font-size: 50px;
+    margin: 0;
+    }
