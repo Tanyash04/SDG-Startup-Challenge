@@ -2,10 +2,20 @@ body, html {
     margin: 0;
     padding: 0;
     display: flex;
+    background-image:url('background.jpg');
     flex-direction: column;
     height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+}
+
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -16,6 +26,7 @@ body, html {
     justify-items: center;
     margin-top: 40px;
     flex-grow: 1;
+    
 }
 
 .card-stacks {
@@ -25,6 +36,7 @@ body, html {
     position: relative;
     cursor: pointer;
     width: 300px;
+    margin-bottom: 250px;
 }
 
 
@@ -204,8 +216,9 @@ body, html {
 
 .header {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    justify-content: center; /* Centers the whole header horizontally */
+    align-items: center; /* Vertically center */
+    justify-content: space-between; /* Moves logos to the extreme left and right */
+    padding: 10px 20px;
     margin-bottom: 10px; /* Adjust this to control the gap below the header */
 }
 
@@ -219,4 +232,29 @@ h1 {
     color: #AECB37;
     font-size: 50px;
     margin: 0;
-    }
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.logo-left, .logo-right {
+    height: 60px; /* Adjust logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.logo-center {
+    height: 60px; /* Keep the current logo the same size */
+    width: auto;
+}
+
+.instructions {
+    text-align: center;
+    margin: 20px 0; /* Adds space around the instructions */
+}
+
+.instructions-image {
+    max-width: 80%; /* Keeps the image responsive */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-bottom: 50px;
+}
