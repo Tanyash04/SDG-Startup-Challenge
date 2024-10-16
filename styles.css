@@ -258,3 +258,15 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     margin-bottom: 50px;
 }
+
+
+.qr-code-container {
+    grid-column: span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.qr-code-image {
+    width: 225px; /* Adjust size as needed */
+    height: 250px;
+}
